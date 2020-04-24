@@ -8,7 +8,7 @@ function draw() {
   
   if(mouseIsPressed){
     setup();
-    arr = shuff(createArray());
+    let arr = shuff(createArray());
   
     for (let i = 1; i <= 1280; i++){
       ellipse(i, arr[i-1], 3, arr[i-1]);
@@ -18,7 +18,7 @@ function draw() {
 
 
 function createArray(){
-  arr = []
+  let arr = [];
   for (let i = 1; i <= 1280; i++){
    arr.push(i)
  }
