@@ -1,5 +1,5 @@
 function setup() {
-  createCanvas(1266, 800);
+  createCanvas(852, 900);
   background(0);
 }
 
@@ -8,10 +8,10 @@ function draw() {
   
   if(mouseIsPressed){
     setup();
-    let arr = shuff(createArray());
+    let arr = createArray();
     
-    for (let i = 0; i < arr.length; i += 10){
-      rect(i, 800-arr[i], 10, arr[i])
+    for (let i = 0; i < arr.length; i += 2){
+      rect(i, 900-arr[i], 2, arr[i])
     } 
   } 
 }
@@ -19,7 +19,7 @@ function draw() {
 
 function createArray(){
   let arr = [];
-  for (let i = 1; i <= 640; i++){
+  for (let i = 1; i <= 850; i++){
    arr.push(i)
  }
   return arr
